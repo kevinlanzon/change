@@ -14,7 +14,12 @@ describe CoinChanger do
    [12,[10,2]],
    [15,[10,5]],
    [19,[10,5,2,2]],
-   [20,[20]]
+   [20,[20]],
+   [21,[20,1]],
+   [25,[20,5]],
+   [30,[20,10]],
+   [40,[20,20]],
+   [50,[50]]
   ].each do |amount, coins|
     it "should gives change for #{amount}" do
       expect(subject.give_change(amount)).to eq coins
