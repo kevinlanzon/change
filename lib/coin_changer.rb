@@ -1,6 +1,6 @@
 class CoinChanger
 
-  COINS = [20,10,5,1]
+  COINS = [20,10,5,2,1]
 
   def give_change(amount)
     change = []
