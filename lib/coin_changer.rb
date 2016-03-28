@@ -1,6 +1,8 @@
 class CoinChanger
 
   def give_change(amount)
-    1
+    change = []
+    amount.times { change << 1 }
+    change
   end
 end
