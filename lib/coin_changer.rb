@@ -2,11 +2,11 @@ class CoinChanger
 
   def give_change(amount)
     change = []
-    if amount == 5
+    if amount >= 5
       change << 5
-    else
-      amount.times { change << 1 }
+      amount -= 5
     end
+    amount.times { change << 1 }
     change
   end
 end
