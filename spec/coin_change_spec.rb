@@ -25,4 +25,16 @@ describe CoinChanger do
   it 'should give change for 6p' do
     expect(subject.give_change(6)).to eq [5,1]
   end
+
+  it 'should give change for 7p' do
+    expect(subject.give_change(7)).to eq [5,1,1]
+  end
+
+  it 'should give change for 8p' do
+    expect(subject.give_change(8)).to eq [5,1,1,1]
+  end
+
+  it 'should give change for 9p' do
+    expect(subject.give_change(9)).to eq [5,1,1,1,1]
+  end
 end
