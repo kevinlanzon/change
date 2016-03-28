@@ -2,6 +2,12 @@ class CoinChanger
 
   def give_change(amount)
     change = []
+
+    if amount >= 10
+      change << 10
+      amount -= 10
+    end
+
     if amount >= 5
       change << 5
       amount -= 5

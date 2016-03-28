@@ -9,8 +9,9 @@ describe CoinChanger do
    [5,[5]],
    [6,[5,1]],
    [9,[5,1,1,1,1]],
+   [10,[10]]
   ].each do |amount, coins|
-    it "should give change for #{amount}" do
+    it "should gives change for #{amount}" do
       expect(subject.give_change(amount)).to eq coins
     end
   end
