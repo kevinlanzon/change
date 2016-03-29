@@ -3,6 +3,11 @@ class CoinChanger
   def give_change(amount)
     change = []
 
+    while amount >= 5
+      change.push(5)
+      amount -= 5
+    end
+
     while amount >= 2
       change.push(2)
       amount -= 2
