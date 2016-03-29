@@ -29,4 +29,8 @@ describe CoinChanger do
   it 'gives change for 12p' do
     expect(subject.give_change(12)).to eq [10,2]
   end
+
+  it 'gives change for 20p' do
+    expect(subject.give_change(20)).to eq [20]
+  end
 end
